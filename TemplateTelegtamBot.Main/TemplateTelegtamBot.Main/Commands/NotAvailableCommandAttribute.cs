@@ -1,0 +1,1 @@
+﻿namespace TelegramBotTemplate.Commands { public sealed class NotAvailableCommandAttribute : Attribute { } }
