@@ -1,7 +1,7 @@
 ﻿namespace TelegramBotTemplate.Commands
 {
     [NotAvailableCommand]
-    internal class HelpBotCommand : IBotCommand
+    public sealed class HelpBotCommand : IBotCommand
     {
         public string Key => "Help";
 

@@ -2,7 +2,6 @@
 
 namespace TelegramBotTemplate.Commands
 {
-
     public static class AllCommandsHelper
     {
         private static Dictionary<string, IBotCommand> _botCommands;

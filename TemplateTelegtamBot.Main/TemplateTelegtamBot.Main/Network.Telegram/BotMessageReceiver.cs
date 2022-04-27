@@ -16,6 +16,8 @@ namespace TelegramBotTemplate.Network.Telegram
             _receiveMessage = receiveMessage;
             _handleError = handleError;
             _botClient = new TelegramBotClient(Settings.TelegramBotToken);
+
+            _botClient.DeleteWebhookAsync();
         }
 
         public void StartReceive(CancellationTokenSource cts, ReceiverOptions options = null)
