@@ -4,12 +4,12 @@ namespace TelegramBotTemplate.Commands
 {
     public sealed class TestFirstBotCommand : IBotCommand
     {
-        public string Key => "Установить API ключ";
+        public string Key => "Первая тестовая команда";
 
         public Task ExecuteAsync(CommandExecutionContext context)
         {
             context.AddCommandStep(new TestFirstBotCommandStep());
-            return context.SendReply("Введите API ключ");
+            return context.SendReply("Введите вводные данные");
         }
 
         public bool IsCanExecute(CommandExecutionContext context)

@@ -7,7 +7,7 @@ namespace TelegramBotTemplate.CommandSteps
         public Task ExecuteAsync(CommandExecutionContext context)
         {
             context.RemoveCommandStep(this);
-            return context.SendAvailableCommands($"Запомнил ваш токен! '{context.RawInput}'");
+            return context.SendAvailableCommands($"Ваши вводные данные! '{context.RawInput}'");
         }
     }
 }

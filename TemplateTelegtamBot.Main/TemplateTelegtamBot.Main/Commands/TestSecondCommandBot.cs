@@ -2,14 +2,14 @@
 
 namespace TelegramBotTemplate.Commands
 {
-    public sealed class TestSecondCardCommandBot : IBotCommand
+    public sealed class TestSecondCommandBot : IBotCommand
     {
-        public string Key => "Обновить название";
+        public string Key => "Вторая тестовая команда";
 
         public Task ExecuteAsync(CommandExecutionContext context)
         {
             context.AddCommandStep(new TestSecondBotCommandStep());
-            return context.SendReply("Напишите новое название");
+            return context.SendReply("Напишите что-нибудь");
         }
 
         public bool IsCanExecute(CommandExecutionContext context)

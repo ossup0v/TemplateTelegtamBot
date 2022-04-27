@@ -7,7 +7,6 @@ using TelegramBotTemplate.Commands;
 
 namespace TelegramBotTemplate.Network.Telegram
 {
-
     public sealed class BotMessageHandler
     {
         private readonly Dictionary<long, TelegramUser> _clients;

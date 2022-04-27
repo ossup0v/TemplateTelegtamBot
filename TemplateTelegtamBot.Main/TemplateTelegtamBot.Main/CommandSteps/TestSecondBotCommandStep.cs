@@ -2,7 +2,7 @@
 
 namespace TelegramBotTemplate.CommandSteps
 {
-    internal class TestSecondBotCommandStep : IBotCommandStep
+    public sealed class TestSecondBotCommandStep : IBotCommandStep
     {
         public Task ExecuteAsync(CommandExecutionContext context)
         {
